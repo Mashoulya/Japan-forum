@@ -1,0 +1,43 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 40vh;
+    background-image: url('img/origin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.vertical-button {
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
+    white-space: nowrap;
+    background-color: rgb(250,128,114);
+    /* box-shadow: 2px 2px 5px rgb(252, 0, 0); */
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .vb1{
+    height: 180px;
+    width: 40px;
+  }
+  .vb2{
+    height: 220px;
+    width: 40px;
+  }
+  
+  .vertical-button span {
+    display: block; /* Affiche chaque caractère sur une ligne séparée */
+    margin-bottom: 0.2em; /* Espacement entre les caractères */
+  }
+  .btn-container{
+   position: absolute;
+    right: 30px;
+    display: flex; /* Utilisation de flexbox */
+  }
