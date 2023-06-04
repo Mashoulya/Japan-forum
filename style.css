@@ -3,18 +3,58 @@
     padding: 0;
     margin: 0;
 }
-header{
-    height: 40vh;
-    background-image: url('img/origin.jpg');
-    background-size: cover;
-    background-position: center;
+body{
+  height: 100vh;
 }
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 40vh auto auto;
+  grid-template-areas:
+    "hd hd hd hd hd hd"
+    "nl main main main bra bra"
+    "nl main main main brb brb";
+}
+
+.header {
+  grid-area: hd;
+  height: 40vh;
+  background-image: url('img/origin.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-left {
+  grid-area: nl;
+  background-color: blue;
+}
+
+.content {
+  grid-area: main;
+  background-color: blueviolet;
+}
+
+.box-right.a {
+  grid-area: bra;
+  background-color: yellow;
+}
+
+.box-right.b {
+  grid-area: brb;
+  background-color: green;
+}
+
+
+
 .vertical-button {
     writing-mode: vertical-rl;
-    /* text-orientation: upright; */
+   
     white-space: nowrap;
     background-color: rgb(250,128,114);
-    /* box-shadow: 2px 2px 5px rgb(252, 0, 0); */
+    
     border: none;
     border-radius: 10px;
     margin-left: 10px;
@@ -33,11 +73,11 @@ header{
   }
   
   .vertical-button span {
-    display: block; /* Affiche chaque caractère sur une ligne séparée */
-    margin-bottom: 0.2em; /* Espacement entre les caractères */
+    display: block; 
+    margin-bottom: 0.2em; 
   }
   .btn-container{
    position: absolute;
     right: 30px;
-    display: flex; /* Utilisation de flexbox */
+    display: flex; 
   }
