@@ -5,6 +5,7 @@
 }
 body{
   height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Maquette de la page d'accueil */
@@ -87,3 +88,15 @@ body{
    right: 30px;
    display: flex; 
   }
+
+  /* MENU NAVIGATION */
+
+.menu-navigation {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2.5em;
+}
+
+.menu-navigation li:hover {
+   background-color: azure;
+}
