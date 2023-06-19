@@ -40,21 +40,28 @@ body{
 .nav-left {
   grid-area: nl;
   background-color: #d9a4a486;
+  border-radius: 15px;
+  margin-left: 20px;
 }
 
 .content {
   grid-area: main;
-  background-color: blueviolet;
+  background-color: #ffffff8a;
+  border-radius: 15px;
 }
 
 .box-right.a {
   grid-area: bra;
-  background-color: yellow;
+  background-color: #ffffff8a;
+  border-radius: 15px;
+  margin-right: 20px;
 }
 
 .box-right.b {
   grid-area: brb;
-  background-color: green;
+  background-color: #ffffff8a;
+  border-radius: 15px;
+  margin-right: 20px;
 }
 
 /* HEADER */
