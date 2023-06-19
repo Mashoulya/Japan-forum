@@ -3,13 +3,18 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+  font-family: 'Hiro';
+  src: url('fonts/Hiroshio.otf') format('truetype');
+ 
+}
 body{
   background-image: url('img/img-fond.jpg');
   background-size: cover;
   background-position: center;
   z-index: -1;
   height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Hiro';
 }
 
 /* Maquette de la page d'accueil */
