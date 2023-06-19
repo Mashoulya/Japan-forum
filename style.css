@@ -4,6 +4,10 @@
     margin: 0;
 }
 body{
+  background-image: url('img/img-fond.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
   height: 100vh;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -11,11 +15,12 @@ body{
 /* Maquette de la page d'accueil */
 
 .grid {
+  position: relative;
   height: 100%;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 40vh auto auto;
+  grid-template-rows: 50vh auto auto;
   grid-template-areas:
     "hd hd hd hd hd hd"
     "nl main main main bra bra"
@@ -23,8 +28,10 @@ body{
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   grid-area: hd;
-  height: 40vh;
+  height: 50vh;
   background-image: url('img/origin.jpg');
   background-size: cover;
   background-position: center;
@@ -32,7 +39,7 @@ body{
 
 .nav-left {
   grid-area: nl;
-  background-color: blue;
+  background-color: #d9a4a486;
 }
 
 .content {
@@ -85,9 +92,11 @@ body{
 }
   .btn-container{
    position: absolute;
+   top: 10px;
    right: 30px;
    display: flex; 
   }
+
 
   /* MENU NAVIGATION */
 
