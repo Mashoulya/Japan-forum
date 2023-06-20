@@ -47,6 +47,7 @@ body{
   background-color: #d9a4a486;
   border-radius: 15px;
   margin-left: 20px;
+  text-align: center; 
 }
 
 .content {
@@ -117,7 +118,11 @@ body{
   font-size: 18px;
   line-height: 2.5em;
 }
-
+.menu-navigation a{
+  text-decoration: none;
+  color: black;
+}
 .menu-navigation li:hover {
    background-color: azure;
+   width: 100%;
 }
