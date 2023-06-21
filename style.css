@@ -111,14 +111,45 @@ body{
   display: flex; 
 }
 
-.searchbar{
+/* .searchbar{
   outline: none;
   border: none;
   border-radius: 10px;
   width: 300px;
   height: 30px;
-}
+} */
 
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  background: #ecd3d8;
+  border-radius: 20px;
+}
+.searchbar, button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.searchbar {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
 
   /* MENU NAVIGATION */
 
