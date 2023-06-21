@@ -126,7 +126,7 @@ form {
   background: #ecd3d8;
   border-radius: 20px;
 }
-.searchbar, button {
+.searchbar, .searchbtn {
   border: none;
   outline: none;
   background: transparent;
@@ -136,7 +136,7 @@ form {
   height: 42px;
   padding-left: 15px;
 }
-button {
+.searchbtn {
   height: 42px;
   width: 42px;
   position: absolute;
@@ -144,7 +144,7 @@ button {
   right: 0;
   cursor: pointer;
 }
-button:before {
+.searchbtn:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
