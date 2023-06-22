@@ -111,19 +111,13 @@ body{
   display: flex; 
 }
 
-/* .searchbar{
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  width: 300px;
-  height: 30px;
-} */
+/* bar de recherche */
 
 form {
   position: relative;
   width: 300px;
-  margin: 0 auto;
-  background: #ecd3d8;
+  margin: 220px auto;
+  background: #ffffff8a;
   border-radius: 20px;
 }
 .searchbar, .searchbtn {
@@ -133,12 +127,15 @@ form {
 }
 .searchbar {
   width: 100%;
-  height: 42px;
+  height: 40px;
   padding-left: 15px;
 }
+.searchbar::placeholder{
+  font-style: italic;
+}
 .searchbtn {
-  height: 42px;
-  width: 42px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   top: 0;
   right: 0;
@@ -148,7 +145,7 @@ form {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
-  color: #F9F0DA;
+  color: #c0bfbc;
 }
 
   /* MENU NAVIGATION */
