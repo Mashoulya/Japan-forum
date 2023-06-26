@@ -163,25 +163,3 @@ form {
    background-color: azure;
    width: 100%;
 }
-
-/* FORMULAIRE D'INSCRIPTION */
-
-.registration-form{
-  background-color: blueviolet;
-  width: 700px;
-  height: 500px;
-  display: flex;
-}
-
-.picture-box{
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: aqua;
-  overflow: hidden;
-}
-.picture-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
