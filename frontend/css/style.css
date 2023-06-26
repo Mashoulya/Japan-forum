@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: 'Hiro';
-  src: url('fonts/Hiroshio.otf') format('truetype');
+  src: url('../fonts/Hiroshio.otf') format('truetype');
  
 }
 body{
-  background-image: url('img/img-fond.jpg');
+  background-image: url('../img/img-fond.jpg');
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -37,7 +37,7 @@ body{
   z-index: 1;
   grid-area: hd;
   height: 50vh;
-  background-image: url('img/origin.jpg');
+  background-image: url('../img/origin.jpg');
   background-size: cover;
   background-position: center;
 }
