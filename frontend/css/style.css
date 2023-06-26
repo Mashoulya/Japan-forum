@@ -1,3 +1,8 @@
+:root {
+  --color-bg: #d9a4a486;
+  --color-second: #ffffff8a;
+}
+
 *, ::before, ::after{
     box-sizing: border-box;
     padding: 0;
@@ -43,7 +48,7 @@ body{
 
 .nav-left {
   grid-area: nl;
-  background-color: #d9a4a486;
+  background-color: var(--color-bg);
   border-radius: 15px;
   margin-left: 20px;
   text-align: center; 
@@ -51,20 +56,20 @@ body{
 
 .content {
   grid-area: main;
-  background-color: #ffffff8a;
+  background-color: var(--color-second);
   border-radius: 15px;
 }
 
 .box-right.a {
   grid-area: bra;
-  background-color: #ffffff8a;
+  background-color: var(--color-second);
   border-radius: 15px;
   margin-right: 20px;
 }
 
 .box-right.b {
   grid-area: brb;
-  background-color: #ffffff8a;
+  background-color: var(--color-second);
   border-radius: 15px;
   margin-right: 20px;
 }
@@ -116,7 +121,7 @@ form {
   position: relative;
   width: 300px;
   margin: 220px auto;
-  background: #ffffff8a;
+  background: var(--color-second);
   border-radius: 20px;
 }
 .searchbar, .searchbtn {

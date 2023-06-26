@@ -1,3 +1,9 @@
+:root {
+    --color-bg: #d9a4a486;
+    --color-second: #ffffff8a;
+  }
+
+
 *, ::before, ::after{
     box-sizing: border-box;
     padding: 0;
@@ -19,21 +25,85 @@ body{
 /* FORMULAIRE D'INSCRIPTION */
 
 .registration-form{
-    background-color: blueviolet;
-    width: 700px;
+    background-color: var(--color-bg);
+    width: 650px;
     height: 500px;
     display: flex;
   }
-  
-  .picture-box{
+
+  .picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .picture-box {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: aqua;
     overflow: hidden;
+    margin-bottom: 10px;
   }
   .picture-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  #photo-input {
+    margin-top: 10px;
+  }
+
+  /* partie droite */
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .inputs-section input[type="text"],
+  .inputs-section input[type="date"],
+  .inputs-section input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+   
+  .inputs-section button {
+    width: 150px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inputs-section button:first-child {
+    background-color: green;
+    margin-right: 20px;
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  .column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .button-row {
+    display: flex;
   }
