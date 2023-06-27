@@ -1,6 +1,7 @@
 :root {
     --color-bg: #d9a4a486;
     --color-second: #ffffff8a;
+    --color-btn: #205555c7;
   }
 
 
@@ -95,16 +96,16 @@ body{
   .inputs-section button {
     width: 150px;
     height: 40px;
-    background-color: blue;
+    background-color: var(--color-btn);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .inputs-section button:first-child {
-    background-color: green;
-    margin-right: 20px;
+  .inputs-section button:nth-child(2) {
+    background-color: #A7C1C1;
+    margin-left: 20px;
   }
 
   .row {
