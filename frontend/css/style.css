@@ -1,27 +1,3 @@
-:root {
-  --color-bg: #d9a4a486;
-  --color-second: #ffffff8a;
-  --color-btn: #fa8072;
-}
-
-*, ::before, ::after{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-@font-face {
-  font-family: 'Hiro';
-  src: url('../fonts/Hiroshio.otf') format('truetype');
- 
-}
-body{
-  background-image: url('../img/img-fond.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  height: 100vh;
-}
-
 /* Maquette de la page d'accueil */
 
 .grid {
@@ -81,6 +57,7 @@ body{
 .vertical-button {
   background-color: rgb(250, 128, 114);
   border: none;
+  text-decoration: none;
   border-radius: 10px;
   margin-left: 10px;
   color: white;
