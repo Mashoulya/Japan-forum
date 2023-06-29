@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .registration-form{
     background-color: var(--color-bg);
@@ -96,7 +95,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .connection-form{
   background-color: var(--color-bg);
@@ -104,4 +102,12 @@
   width: 360px;
   height: 200px;
   display: flex;
+}
+
+/* ICON HOME  */
+
+.icon-home{
+
+  margin-top: 20px;
+  margin-left: 20px;
 }
