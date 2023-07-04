@@ -180,3 +180,6 @@ form {
   .card-content p {
     margin: 5px 0 0;
   }
+.card-content span{
+  font-style: italic;
+}
