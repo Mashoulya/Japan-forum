@@ -37,19 +37,22 @@
   border-radius: 15px;
 }
 
-.box-right.a {
-  grid-area: bra;
+.box-right {
   background-color: var(--color-second);
   border-radius: 15px;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+.box-right.a {
+  grid-area: bra;
+}
 .box-right.b {
   grid-area: brb;
-  background-color: var(--color-second);
-  border-radius: 15px;
-  margin-right: 20px;
 }
+
 
 /* HEADER */
 
@@ -146,3 +149,34 @@ form {
    background-color: azure;
    width: 100%;
 }
+
+
+  /* CARDS */
+  
+  .card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+  
+  .card-content {
+    flex-grow: 1;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+  }
+  
+  .card-content p {
+    margin: 5px 0 0;
+  }
