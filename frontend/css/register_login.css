@@ -64,14 +64,17 @@
     width: 150px;
     height: 40px;
     background-color: var(--color-btn);
-    color: white;
+    color: var(--color-btn1);
+    font-size: 16px;
+    font-weight: 700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .inputs-section button:nth-child(2) {
-    background-color: #A7C1C1;
+    background-color: var(--color-btn1);
+    color: var(--color-btn);
     margin-left: 20px;
   }
 
