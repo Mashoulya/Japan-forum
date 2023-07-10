@@ -1,36 +1,37 @@
 .pageUser{
+  height: 100vh;
   display: grid;
-  height: 100%;
   grid-gap: 20px;
-  grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px;
-  grid-template-areas:
-
-  "A A A A A"
-  ". D D D C"
-  ". D D D C"
-  ". D D D E"
-  ". D D D E"
-  "F F F F F";
+  grid-template-columns: 1fr 3.5fr 1.5fr;
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .one {
-  grid-area: A;
   background-color: aqua;
-}
-.three {
-  grid-area: C;
-  background-color: brown;
-}
-.four{
-  grid-area: D;
-  background-color: blueviolet;
-}
-.five{
-  grid-area: E;
-  background-color: yellow;
-}
-.footer{
-  grid-area: F;
-  background-color: green;
+  grid-area: 1/ 1/ 2/ 4/* Начало линии 1, начало столбца 1, конец линии 2, конец столбца 7 */
 }
 
+.nav-left {
+  background-color: blue;
+  grid-area: 2/ 1/ 7/ 2; 
+}
+
+.four {
+  background-color: blueviolet;
+  grid-area: 2/ 2/ 10/ 3; 
+}
+
+.three {
+  background-color: brown;
+  grid-area: 2/ 3/ 6/ 4; 
+}
+
+.five {
+  background-color: yellow;
+  grid-area: 6/ 3/ 10/ 4; 
+}
+
+.ft {
+  background-color: green;
+  grid-area: 10/ 1/ 11/ 4; 
+}
