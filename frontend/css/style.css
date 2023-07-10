@@ -1,10 +1,9 @@
 /* Maquette de la page d'accueil */
 
 .grid {
-  position: relative;
-  display: grid;
-  grid-gap: 20px;
   height: 100vh;
+  position: relative;
+  display: grid;   
   grid-template-columns: 1fr 3.5fr 1.5fr;
   grid-template-rows: repeat(10, 1fr);
   
@@ -21,10 +20,12 @@
 }
 
 .nav-left {
-   grid-area: 5/ 1/ 10/ 2;
+  grid-area: 5/ 1/ 10/ 2;
   background-color: var(--color-bg);
   border-radius: 15px;
   margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
   text-align: center;
 }
 
@@ -32,12 +33,15 @@
   grid-area: 5/ 2/ 10/ 3;
   background-color: var(--color-second);
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .box-right {
   background-color: var(--color-second);
   border-radius: 15px;
+  margin-top: 20px;
   margin-right: 20px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -53,6 +57,7 @@
 .ft{
   grid-area: 10/ 1/ 11/ 4;
   background-color: blueviolet;
+  margin-top: 20px;
 }
 
 
@@ -103,7 +108,7 @@
 form {
   position: relative;
   width: 300px;
-  margin: 220px auto;
+  margin: 180px auto;
   background: var(--color-second);
   border-radius: 20px;
 }
