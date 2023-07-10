@@ -12,7 +12,7 @@
 }
 
 .nav-left {
-  background-color: blue;
+  background-color: blue;       /*  5 строчек*/
   grid-area: 2/ 1/ 7/ 2; 
 }
 
