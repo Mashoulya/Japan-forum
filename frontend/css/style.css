@@ -6,18 +6,19 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50vh auto auto;
+  grid-template-rows: 40vh auto auto auto;
   grid-template-areas:
     "hd hd hd hd hd hd"
     "nl main main main bra bra"
-    "nl main main main brb brb";
+    "nl main main main brb brb"
+    "ft ft ft ft ft ft";
 }
 
 .header {
   position: relative;
   z-index: 1;
   grid-area: hd;
-  height: 50vh;
+  height: 40vh;
   background-image: url('../img/origin.jpg');
   background-size: cover;
   background-position: center;
@@ -183,3 +184,6 @@ form {
 .card-content span{
   font-style: italic;
 }
+
+/* FOOTER */
+
