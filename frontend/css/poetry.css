@@ -1,4 +1,4 @@
-.pagePotery{
+.pageGrid{
     height: 100vh;
     display: grid;
     grid-gap: 20px;
@@ -6,7 +6,7 @@
     grid-template-rows: repeat(10, 1fr);
   }
   
-  .one {
+  .navbar {
     background-color: aqua;
     grid-area: 1/ 1/ 2/ 4/* Начало линии 1, начало столбца 1, конец линии 2, конец столбца 7 */
   }

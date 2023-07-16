@@ -1,4 +1,4 @@
-.pageUser{
+.pageGrid{
   height: 100vh;
   display: grid;
   grid-gap: 20px;
@@ -6,7 +6,7 @@
   grid-template-rows: repeat(10, 1fr);
 }
 
-.one {
+.navbar {
   background-color: aqua;
   grid-area: 1/ 1/ 2/ 4/* Начало линии 1, начало столбца 1, конец линии 2, конец столбца 7 */
 }
@@ -36,20 +36,20 @@
   width: 100%;
 }
 
-.two {
+.user-content {
   background-color: var(--color-second);
   grid-area: 2/ 2/ 10/ 3;
   border-radius: 15px;
 }
 
-.three {
+.user-photo {
   background-color: brown;
   grid-area: 2/ 3/ 6/ 4;
   border-radius: 15px;
   margin-right: 20px;
 }
 
-.four {
+.user-info {
   background-color: yellow;
   grid-area: 6/ 3/ 10/ 4;
   border-radius: 15px;
