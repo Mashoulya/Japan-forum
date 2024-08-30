@@ -46,10 +46,14 @@ class User
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Poem::class)]
     private Collection $poems;
 
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Origami::class)]
+    private Collection $origamis;
+
     public function __construct()
     {
         $this->images = new ArrayCollection();
         $this->poems = new ArrayCollection();
+        $this->origamis = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -207,6 +211,36 @@ class User
             // set the owning side to null (unless already changed)
             if ($poem->getUser() === $this) {
                 $poem->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Origami>
+     */
+    public function getOrigamis(): Collection
+    {
+        return $this->origamis;
+    }
+
+    public function addOrigami(Origami $origami): static
+    {
+        if (!$this->origamis->contains($origami)) {
+            $this->origamis->add($origami);
+            $origami->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrigami(Origami $origami): static
+    {
+        if ($this->origamis->removeElement($origami)) {
+            // set the owning side to null (unless already changed)
+            if ($origami->getUser() === $this) {
+                $origami->setUser(null);
             }
         }
 
