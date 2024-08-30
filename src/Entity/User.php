@@ -40,8 +40,8 @@ class User
     #[ORM\Column(length: 255)]
     private ?string $userPhoto = null;
 
-    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Image::class)]
-    private Collection $images;
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Painting::class)]
+    private Collection $paintings;
 
     #[ORM\OneToMany(mappedBy: 'user', targetEntity: Poem::class)]
     private Collection $poems;
@@ -51,7 +51,7 @@ class User
 
     public function __construct()
     {
-        $this->images = new ArrayCollection();
+        $this->paintings = new ArrayCollection();
         $this->poems = new ArrayCollection();
         $this->origamis = new ArrayCollection();
     }
@@ -157,30 +157,31 @@ class User
         return $this;
     }
 
+
     /**
-     * @return Collection<int, Image>
+     * @return Collection<int, Painting>
      */
-    public function getImages(): Collection
+    public function getPaintings(): Collection
     {
-        return $this->images;
+        return $this->paintings;
     }
 
-    public function addImage(Image $image): static
+    public function addPainting(Painting $painting): static
     {
-        if (!$this->images->contains($image)) {
-            $this->images->add($image);
-            $image->setUser($this);
+        if (!$this->paintings->contains($painting)) {
+            $this->paintings->add($painting);
+            $painting->setUser($this);
         }
 
         return $this;
     }
 
-    public function removeImage(Image $image): static
+    public function removePainting(Painting $painting): static
     {
-        if ($this->images->removeElement($image)) {
+        if ($this->paintings->removeElement($painting)) {
             // set the owning side to null (unless already changed)
-            if ($image->getUser() === $this) {
-                $image->setUser(null);
+            if ($painting->getUser() === $this) {
+                $painting->setUser(null);
             }
         }
 

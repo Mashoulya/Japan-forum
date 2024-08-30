@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\ImageRepository;
+use App\Repository\PaintingRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: ImageRepository::class)]
-class Image
+#[ORM\Entity(repositoryClass: PaintingRepository::class)]
+class Painting
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -17,12 +17,12 @@ class Image
     private ?string $title = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $filePath = null;
+    private ?string $imgFile = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $uploadedAt = null;
+    private ?\DateTimeImmutable $createdAt = null;
 
-    #[ORM\ManyToOne(inversedBy: 'images')]
+    #[ORM\ManyToOne(inversedBy: 'paintings')]
     private ?User $user = null;
 
     public function getId(): ?int
@@ -42,26 +42,26 @@ class Image
         return $this;
     }
 
-    public function getFilePath(): ?string
+    public function getImgFile(): ?string
     {
-        return $this->filePath;
+        return $this->imgFile;
     }
 
-    public function setFilePath(string $filePath): static
+    public function setImgFile(string $imgFile): static
     {
-        $this->filePath = $filePath;
+        $this->imgFile = $imgFile;
 
         return $this;
     }
 
-    public function getUploadedAt(): ?\DateTimeImmutable
+    public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->uploadedAt;
+        return $this->createdAt;
     }
 
-    public function setUploadedAt(\DateTimeImmutable $uploadedAt): static
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
-        $this->uploadedAt = $uploadedAt;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
