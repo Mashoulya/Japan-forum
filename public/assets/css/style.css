@@ -1,3 +1,37 @@
+
+:root {
+  --color-bg: #d9a4a486;
+  --color-second: #ffffff8a;
+  --color-btn: #205555de;
+  --color-btn1: #A7C1C1;
+}
+
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+font-family: 'Hiro';
+src: url('../fonts/Hiroshio.otf') format('truetype');
+}
+
+body{
+background-image: url('../img/img-fond.jpg');
+background-size: cover;
+background-position: center;
+z-index: -1;
+/* height: 100vh; */
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+font-family: Hiro;
+text-align: center;
+margin: 20px;
+}
+
 /* PAGE ACCUIEL */
 
 .grid {
@@ -96,7 +130,7 @@
 
 /* bar de recherche */
 
-form {
+.search {
   position: relative;
   width: 300px;
   margin: 180px auto;
@@ -182,56 +216,6 @@ form {
   font-style: italic;
 }
 
-
-/* GRID DE TOUTES LES PAGES */
-
-.pageGrid{
-  height: 100vh;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 3.5fr 1.5fr;
-  grid-template-rows: repeat(10, 1fr);
-}
-
-.navbar-top {
-  background-color: aqua;
-  grid-area: 1/ 1/ 2/ 4/* Начало линии 1, начало столбца 1, конец линии 2, конец столбца 7 */
-}
-
-.nav-left-forPages {
-  grid-area: 2/ 1/ 7/ 2;
-  background-color: var(--color-bg);
-  border-radius: 15px;
-  text-align: center;
-}
-
-/* user page */
-
-.user-content {
-  background-color: var(--color-second);
-  grid-area: 2/ 2/ 10/ 3;
-  border-radius: 15px;
-}
-
-.user-photo {
-  background-color: brown;
-  grid-area: 2/ 3/ 6/ 4;
-  border-radius: 15px;
-}
-
-.user-info {
-  background-color: yellow;
-  grid-area: 6/ 3/ 10/ 4;
-  border-radius: 15px;
-}
-
-/* poetry page  */
-
-.page-content {
-  background-color: var(--color-second);
-  grid-area: 2/ 2/ 10/ 4;
-  border-radius: 15px;
-}
 
 /* FORMULAIRE D'INSCRIPTION */
 
@@ -352,3 +336,20 @@ margin-left: 20px;
 
 
 /* FOOTER */
+
+
+/* POETRY */
+
+.poem-container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.left{
+background-color: red;
+}
+.center{
+  max-width: 1200px;
+  background-color: blueviolet;
+}

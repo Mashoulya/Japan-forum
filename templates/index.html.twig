@@ -39,7 +39,7 @@
             
             <!-- search bar -->
 
-            <form>
+            <form class="search">
                 <input type="text" name="search" class="searchbar" placeholder="Recherche...">
                 <button type="submit" class="searchbtn"></button>
             </form>
@@ -56,13 +56,13 @@
                         <a href="">Accueil</a>
                     </li>
                     <li>
-                        <a href="">Poésie</a>
+                        <a href="{{ path('app_poem') }}">Poésie</a> 
                     </li>
                     <li>
-                        <a href="">Origami</a>
+                        <a href="{{ path('app_painting') }}">Peinture</a>
                     </li>
                     <li>
-                        <a href="">Peinture</a>
+                        <a href="{{ path('app_origami') }}">Origami</a>
                     </li>
                     <li>
                         <a href="">Photos</a>
@@ -72,9 +72,6 @@
                     </li>
                     <li>
                         <a href="">Forum</a>
-                    </li>
-                    <li>
-                        <a href="">Contacts</a>
                     </li>
                 </ul>
         </nav>
@@ -103,7 +100,8 @@
         </div>
 
         <footer class="ft">
-            @ M
+            <p>© 2024 Maria Ibragimova - Tous droits réservés</p>
+            <p>Nous contacter</p>
         </footer>
      
     </div>
