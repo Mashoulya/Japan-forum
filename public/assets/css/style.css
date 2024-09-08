@@ -29,6 +29,9 @@ h1{
   text-align: center;
   margin-bottom: 30px;
 }
+h2{
+  font-family: Hiro;
+}
 
 /* HEADER */
 
@@ -41,44 +44,32 @@ h1{
   padding: 30px;
 }
 
-.vertical-button {
-  font-family: Hiro;
-  background-color: rgb(250, 128, 114);
-  border: none;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-left: 10px;
-  color: white;
-  font-weight: 500;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 180px;
-  width: 40px;
-}
-.vb1{
-  height: 180px;
-  width: 40px;
-}
-
-.vb2{
-  height: 220px;
-  width: 40px;
-}
-
-.vertical-button span {
-  display: block;
-  margin-bottom: 0.1em;
-}
-
 .btn-container{
   position: absolute;
   top: 10px;
   right: 30px;
   display: flex; 
+}
+
+.vertical-button {
+  font-family: Hiro;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: rgba(250, 128, 114, 0.829);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.vb1{
+  height: 180px;
+}
+
+.vb2{
+  height: 220px;
 }
 
 /* Menu navigation */
@@ -340,7 +331,31 @@ margin-left: 20px;
 .left{
 background-color: red;
 }
-.center{
+.poems{
   max-width: 1200px;
-  background-color: blueviolet;
+  /* background-color: var(--color-second); */
+  display: flex;
+  justify-content: space-evenly;
+}
+.poems-cards{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.poem-card{
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  line-height: 1.5rem;
+}
+.hokku{
+  align-self: center;
+  background-color: rgba(207, 43, 43, 0.829);
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  writing-mode: vertical-rl; /* Устанавливает вертикальное направление справа налево */
+  text-orientation: upright; /* Выравнивает буквы по вертикали */
+}
+.autor{
+  text-align: right;
 }
