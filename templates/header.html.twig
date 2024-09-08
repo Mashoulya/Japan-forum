@@ -1,0 +1,71 @@
+<!-- HEADER -->
+
+<header>
+    <div class="header">
+
+        <h1>Coin artistique</h1>
+
+        <div class="btn-container">
+            <a type="submit" class="vertical-button vb1" href="{{ path('app_login') }}">
+                <span>C</span>
+                <span>o</span>
+                <span>n</span>
+                <span>n</span>
+                <span>e</span>
+                <span>x</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>
+            </a>
+            <a class="vertical-button vb2" href="{{ path('app_register') }}">
+                <span>I</span>
+                <span>n</span>
+                <span>s</span>
+                <span>c</span>
+                <span>r</span>
+                <span>i</span>
+                <span>p</span>
+                <span>t</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>
+            </a>
+        </div>
+
+        <!-- Barre de navigation -->
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{ path('index') }}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_poem') }}">Poésie</a> 
+                </li>
+                <li>
+                    <a href="{{ path('app_painting') }}">Peinture</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_origami') }}">Origami</a>
+                </li>
+                <li>
+                    <a href="">Photos</a>
+                </li>
+                <li>
+                    <a href="">Vidéo</a>
+                </li>
+                <li>
+                    <a href="">Forum</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- search bar -->
+    
+        <form class="search">
+            <input type="text" name="search" class="searchbar" placeholder="Recherche...">
+            <button type="submit" class="searchbtn"></button>
+        </form>
+    
+    </div>
+</header>
